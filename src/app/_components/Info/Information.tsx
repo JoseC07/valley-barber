@@ -22,8 +22,9 @@ export default function Information() {
               
             />
           </div>
-          <div className=" md:col-span-1 bg-gray-200">
-          test
+          <div className="md:col-span-1 bg-gray-50 rounded-lg p-6 flex justify-center">
+            <p className="mt-0.5 text-lg font-medium text-gray-900">Contacts</p>
+             
           </div>
         </div></section>
   )
