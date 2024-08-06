@@ -2,19 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: ligth) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 226, 232, 240; /* #e2e8f0 */
+    --background-start-rgb: 226, 232, 240; /* #e2e8f0 */
+    --background-end-rgb: 226, 232, 240; /* #e2e8f0 */
   }
 }
+
+#map { height: 180px; }
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,6 +20,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.video-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Adjust as needed */
+  
 }
 
 @layer utilities {
