@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+
 import openNew from '/public/open_new.png'
 import { Titillium_Web, Bebas_Neue, Great_Vibes } from 'next/font/google'
 
@@ -37,10 +38,12 @@ export default function About() {
                     </p>
                 </div>
                 <div className=" col-span-4 row-span-1 md:col-span-2 md:col-end-6">
-                    <img
+                    <Image
                         src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt=""
                         className="max-w w-auto h-full rounded-lg object-cover"
+                        width={500}
+                        height={500}
                     />
                 </div>
                 {/* <div className="col-span-1">
